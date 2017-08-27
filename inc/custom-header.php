@@ -8,7 +8,7 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package nateserk-techy-news
+ * @package nateserk_techy_news
  */
 
 /**

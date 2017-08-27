@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package nateserk-techy-news
+ * @package nateserk_techy_news
  */
 
 ?>
@@ -29,44 +29,14 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'nateserk-techy-news' ); ?></a>
-
 	<header id="masthead" class="site-header">
-		<!-- <div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) : ?>
-
-			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-			<?php
-			endif;
-
-			$description = get_bloginfo( 'description', 'display' );
-			if ( $description || is_customize_preview() ) : ?>
-				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-			<?php
-			endif; ?>
-		</div><!-- .site-branding -->
-
 		<!--header-->
-	  <div class="header">
-	      <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
-	          <a class="pure-menu-heading pure-u-md-1-5" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php the_custom_logo(); bloginfo( 'name' );?></a>
-
-							<?php
-								// pure-menu-item need integration
-								wp_nav_menu( array(
-									'theme_location' => 'menu-header',
-									'menu_id'        => 'primary-menu',
-									'menu_class'	=> 'pure-menu-list pure-u-md-3-5'
-								) );
-							?>
-	      </div>
-
-	  </div>
-	  <!--header-->
+				<div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+						<a class="pure-menu-heading pure-u-md-1-5" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php the_custom_logo(); bloginfo( 'name' );?></a>
+							<ul class="pure-menu-list pure-u-md-3-5"><?php do_action('nateserk_techy_news_action_setup_menu', 'menu-header'); ?></ul>
+				</div>
+		<!--header-->
 	</header><!-- #masthead -->
-
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'nateserk_techy_news' ); ?></a>
 	<div id="content" class="pure-g site-content">

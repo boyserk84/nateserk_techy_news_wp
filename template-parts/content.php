@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package nateserk-techy-news
+ * @package nateserk_techy_news
  */
 
 ?>
@@ -31,7 +31,7 @@
 			the_content( sprintf(
 				wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'nateserk-techy-news' ),
+					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'nateserk_techy_news' ),
 					array(
 						'span' => array(
 							'class' => array(),
@@ -42,7 +42,7 @@
 			) );
 
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'nateserk-techy-news' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'nateserk_techy_news' ),
 				'after'  => '</div>',
 			) );
 		?>

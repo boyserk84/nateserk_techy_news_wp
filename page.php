@@ -9,7 +9,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package nateserk-techy-news
+ * @package nateserk_techy_news
  */
 
 get_header(); ?>

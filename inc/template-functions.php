@@ -2,7 +2,7 @@
 /**
  * Functions which enhance the theme by hooking into WordPress
  *
- * @package nateserk-techy-news
+ * @package nateserk_techy_news
  */
 
 /**

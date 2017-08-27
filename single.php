@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package nateserk-techy-news
+ * @package nateserk_techy_news
  */
 
 get_header(); ?>

@@ -9,12 +9,12 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package nateserk-techy-news
+ * @package nateserk_techy_news
  */
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="pure-g content-wrapper content-area">
 		<main id="main" class="site-main">
 
 		<?php
@@ -22,7 +22,7 @@ get_header(); ?>
 
 			if ( is_home() && ! is_front_page() ) : ?>
 				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+					<h1 class="page-title screen-reader-text">FRONT PAGE <?php single_post_title(); ?></h1>
 				</header>
 
 			<?php

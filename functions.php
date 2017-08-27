@@ -1,10 +1,10 @@
 <?php
 /**
- * nateserk-techy-news functions and definitions
+ * nateserk_techy_news functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package nateserk-techy-news
+ * @package nateserk_techy_news
  */
 
 if ( ! function_exists( 'nateserk_techy_news_setup' ) ) :
@@ -19,10 +19,10 @@ if ( ! function_exists( 'nateserk_techy_news_setup' ) ) :
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on nateserk-techy-news, use a find and replace
-		 * to change 'nateserk-techy-news' to the name of your theme in all the template files.
+		 * If you're building a theme based on nateserk_techy_news, use a find and replace
+		 * to change 'nateserk_techy_news' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'nateserk-techy-news', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'nateserk_techy_news', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -44,7 +44,7 @@ if ( ! function_exists( 'nateserk_techy_news_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-header' => esc_html__( 'Primary', 'nateserk-techy-news' ),
+			'menu-header' => esc_html__( 'Primary', 'nateserk_techy_news' ),
 		) );
 
 		/*
@@ -102,9 +102,9 @@ add_action( 'after_setup_theme', 'nateserk_techy_news_content_width', 0 );
  */
 function nateserk_techy_news_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'nateserk-techy-news' ),
+		'name'          => esc_html__( 'Sidebar', 'nateserk_techy_news' ),
 		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'nateserk-techy-news' ),
+		'description'   => esc_html__( 'Add widgets here.', 'nateserk_techy_news' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
@@ -117,11 +117,11 @@ add_action( 'widgets_init', 'nateserk_techy_news_widgets_init' );
  * Enqueue scripts and styles.
  */
 function nateserk_techy_news_scripts() {
-	wp_enqueue_style( 'nateserk-techy-news-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'nateserk_techy_news-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'nateserk-techy-news-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'nateserk_techy_news-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'nateserk-techy-news-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+	wp_enqueue_script( 'nateserk_techy_news-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	wp_enqueue_style( 'nateserk-techy-fonts', 'https://fonts.googleapis.com/css?family=Roboto' );
 

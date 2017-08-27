@@ -1,9 +1,10 @@
 <?php
 /**
- * nateserk-techy-news Theme Customizer
+ * nateserk_techy_news Theme Customizer
  *
- * @package nateserk-techy-news
+ * @package nateserk_techy_news
  */
+ require get_template_directory() .'/inc/init.php';
 
 /**
  * Add postMessage support for site title and description for the Theme Customizer.
@@ -50,6 +51,6 @@ function nateserk_techy_news_customize_partial_blogdescription() {
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
 function nateserk_techy_news_customize_preview_js() {
-	wp_enqueue_script( 'nateserk-techy-news-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20151215', true );
+	wp_enqueue_script( 'nateserk_techy_news-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20151215', true );
 }
 add_action( 'customize_preview_init', 'nateserk_techy_news_customize_preview_js' );
