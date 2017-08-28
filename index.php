@@ -20,7 +20,7 @@ get_header(); ?>
 		<?php
 		if ( have_posts() ) :
 
-			if ( is_home() && ! is_front_page() ) : ?>
+			if ( is_home() && !is_front_page() ) : ?>
 				<header>
 					<h1 class="page-title screen-reader-text">FRONT PAGE <?php single_post_title(); ?></h1>
 				</header>
@@ -29,8 +29,6 @@ get_header(); ?>
 			endif;
 
 			get_template_part( 'template-parts/content', 'listing' );
-
-			the_posts_navigation();
 
 		else :
 

@@ -19,3 +19,13 @@ while ( have_posts() ) : the_post();
   //get_template_part( 'template-parts/content', get_post_format() );
   get_template_part( 'template-parts/content', 'item' );
 endwhile;
+?>
+<div class="pure-u-1 pure-md-1">
+  <?php
+  the_posts_pagination( array(
+    'mid_size' => 5,
+    'prev_text' => __( 'Back', 'textdomain' ),
+    'next_text' => __( 'Next', 'textdomain' ),
+  ));
+  ?>
+</div>
