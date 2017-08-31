@@ -123,6 +123,9 @@ function nateserk_techy_news_scripts() {
 
 	wp_enqueue_script( 'nateserk_techy_news-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
+	/*Font-Awesome-master*/
+	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/assets/library/font-awesome/css/font-awesome.min.css', array(), '4.7.0' );
+
 	wp_enqueue_style( 'nateserk-techy-fonts', 'https://fonts.googleapis.com/css?family=Roboto' );
 
 
