@@ -32,8 +32,13 @@
 	<header id="masthead" class="site-header">
 		<!--header-->
 				<div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
-						<a class="pure-menu-heading pure-u-md-1-5" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php the_custom_logo(); bloginfo( 'name' );?></a>
-							<ul class="pure-menu-list pure-u-md-3-5"><?php do_action('nateserk_techy_news_action_setup_menu', 'menu-header'); ?></ul>
+						<a class="site-title pure-menu-heading pure-u-md-1-5" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php the_custom_logo(); bloginfo( 'name' );?></a>
+						<ul class="pure-menu-list pure-u-md-3-5"><?php do_action('nateserk_techy_news_action_setup_menu', 'menu-header'); ?></ul>
+						<div class="content-center pure-u-sm-1 pure-u-md-1-5">
+							<i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+							<i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+							<i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+						</div>
 				</div>
 		<!--header-->
 	</header><!-- #masthead -->
