@@ -775,6 +775,9 @@ a:active {
   font-family: inherit;
 }
 
+.entry-content {
+	text-align: justify;
+}
 .pagination,
 .content-center {
 	text-align: center;
