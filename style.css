@@ -778,11 +778,14 @@ a:active {
 .entry-content {
 	text-align: justify;
 }
+
+.site-info,
 .pagination,
 .content-center {
 	text-align: center;
 }
 
+.cat-links a,
 .pagination a{
 	text-decoration: none;
 }

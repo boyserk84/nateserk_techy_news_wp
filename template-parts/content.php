@@ -12,11 +12,27 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header pure-g pure-u-1">
 		<?php
+		// Grab category this post belongs to.
+		$categories_list = get_the_category_list( esc_html__( ', ', 'nateserk_techy_news' ) );
+		$categories_html = '';
+		if ( $categories_list ) {
+			/* translators: 1: list of categories. */
+			$categories_html = sprintf( '<button class="pure-button cat-links">' . esc_html__( '%1$s', 'nateserk_techy_news' ) . '</button> ', $categories_list ); // WPCS: XSS OK.
+		}
+
 		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
+			the_title( '<h1 class="entry-title">' .$categories_html, '</h1>' );
 		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+			the_title( '<h2 class="entry-title">' .$categories_html .'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
+
+		$tb_size = 'large';
+		$tb_attr = array("class"=>'pure-u-1', "title"=>get_the_title() );
+		if( has_post_thumbnail() ){
+			echo get_the_post_thumbnail( null, $tb_size, $tb_attr);
+		} else {
+			echo '<img src="' .get_template_directory_uri() .'/assets/img/300x190_fff.png" class="pure-u-1"/></a>';
+		}
 
 		if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta pure-g pure-u-1">
@@ -47,8 +63,4 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
-
-	<footer class="entry-footer pure-g pure-u-1">
-		<?php nateserk_techy_news_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
