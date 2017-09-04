@@ -96,6 +96,7 @@ template {
 
 a {
 	background-color: transparent;
+	text-decoration: none;
 }
 
 a:active,
@@ -788,6 +789,16 @@ a:active {
 .cat-links a,
 .pagination a{
 	text-decoration: none;
+}
+
+.cat-header
+.cat-links {
+	text-transform: capitalize;
+	text-align: left;
+}
+
+.cat-header {
+	margin-top: 2em;
 }
 
 /* em pure-hidden values */

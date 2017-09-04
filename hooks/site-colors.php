@@ -33,6 +33,7 @@ if ( ! function_exists( 'nateserk_techy_news_setup_site_primary_color' ) ) :
           $text_color = $options['nateserk_techy_news-custom-theme-text-color'];
           ?>
           <style type="text/css">
+            .cat-links,
             .site-primary-menu-item,
             .site-primary-category,
             .site-primary-reading_button,
@@ -47,6 +48,7 @@ if ( ! function_exists( 'nateserk_techy_news_setup_site_primary_color' ) ) :
             $link_color = $options['nateserk_techy_news-custom-link-color'];
             if (!empty($link_color)) {
               ?>
+              .cat-links a,
               .site-primary-menu-item a,
               .site-primary-category a,
               .site-primary-reading_button a,
@@ -59,6 +61,7 @@ if ( ! function_exists( 'nateserk_techy_news_setup_site_primary_color' ) ) :
             $hover_color = $options['nateserk_techy_news-custom-link-hover-color'];
             if (!empty($hover_color)) {
               ?>
+              .cat-links a:hover,
               .site-primary-menu-item a:hover,
               .site-primary-category a:hover,
               .site-primary-reading_button a:hover,

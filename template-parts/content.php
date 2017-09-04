@@ -20,10 +20,12 @@
 			$categories_html = sprintf( '<button class="pure-button cat-links site-primary-category">' . esc_html__( '%1$s', 'nateserk_techy_news' ) . '</button> ', $categories_list ); // WPCS: XSS OK.
 		}
 
+		echo '<div class="pure-u-1 cat-header">' .$categories_html .'</div>';
+
 		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">' .$categories_html, '</h1>' );
+			the_title( '<h1 class="entry-title pure-u-1">', '</h1>' );
 		else :
-			the_title( '<h2 class="entry-title">' .$categories_html .'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+			the_title( '<h2 class="entry-title pure-u-1">' .'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
 
 		if ( 'post' === get_post_type() ) :?>
