@@ -18,7 +18,7 @@ function nateserk_techy_news_setup_customized_menu($theme_location) {
       $menu_items = wp_get_nav_menu_items($locations[$theme_location]);
       if ( $menu_items ) {
         foreach ($menu_items as $item) {
-          echo '<li class="pure-menu-item"><a href="'.$item->url .'" class="pure-menu-link"">' .$item->title .'</a></li>';
+          echo '<li class="pure-menu-item"><a href="'.$item->url .'" class="pure-menu-link site-primary-menu-item">' .$item->title .'</a></li>';
         }//foreach
       }//if
     }

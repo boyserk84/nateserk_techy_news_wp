@@ -17,7 +17,7 @@
 		$categories_html = '';
 		if ( $categories_list ) {
 			/* translators: 1: list of categories. */
-			$categories_html = sprintf( '<button class="pure-button cat-links">' . esc_html__( '%1$s', 'nateserk_techy_news' ) . '</button> ', $categories_list ); // WPCS: XSS OK.
+			$categories_html = sprintf( '<button class="pure-button cat-links site-primary-category">' . esc_html__( '%1$s', 'nateserk_techy_news' ) . '</button> ', $categories_list ); // WPCS: XSS OK.
 		}
 
 		if ( is_singular() ) :
