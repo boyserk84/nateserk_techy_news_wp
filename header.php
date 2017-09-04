@@ -9,6 +9,7 @@
  * @package nateserk_techy_news
  */
 
+do_action( 'nateserk_techy_news_action_before_head' );
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -25,14 +26,18 @@
 			<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
 	<!--<![endif]-->
 
-	<?php wp_head(); ?>
+	<?php
+
+	wp_head();
+	do_action( 'nateserk_techy_news_action_in_header' );
+	?>
 </head>
 
 <body <?php body_class(); ?>>
 	<header id="masthead" class="site-header">
 		<!--header-->
-				<div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
-						<a class="site-title pure-menu-heading pure-u-md-1-5" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php the_custom_logo(); bloginfo( 'name' );?></a>
+				<div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed site-primary">
+						<a class="site-title pure-menu-heading pure-u-md-1-5 site-primary-text" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php the_custom_logo(); bloginfo( 'name' );?></a>
 						<ul class="pure-menu-list pure-u-md-3-5"><?php do_action('nateserk_techy_news_action_setup_menu', 'menu-header'); ?></ul>
 						<div class="content-center pure-u-sm-1 pure-u-md-1-5">
 							<i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>

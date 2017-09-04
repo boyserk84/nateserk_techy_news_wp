@@ -1,6 +1,11 @@
 <?php
-
-
+/**
+* Template part for displaying posts navigation.
+*
+* @link https://codex.wordpress.org/Template_Hierarchy
+*
+* @package nateserk_techy_news
+*/
 ?>
 
 

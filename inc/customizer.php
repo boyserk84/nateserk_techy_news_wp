@@ -26,6 +26,10 @@ function nateserk_techy_news_customize_register( $wp_customize ) {
 			'render_callback' => 'nateserk_techy_news_customize_partial_blogdescription',
 		) );
 	}
+
+  /** Theme Primary Color options */
+  $custom_theme_color_option_file_path = nateserk_techy_news_file_directory('inc/options/custom-theme-color-options.php');
+  require $custom_theme_color_option_file_path;
 }
 add_action( 'customize_register', 'nateserk_techy_news_customize_register' );
 

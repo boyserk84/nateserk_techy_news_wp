@@ -28,7 +28,7 @@
         the_content( sprintf(
           wp_kses(
             /* translators: %s: Name of current post. Only visible to screen readers */
-            __( '<button class="button-error pure-button">Continue reading<span class="screen-reader-text"> "%s"</span></button>', 'nateserk_techy_news' ),
+            __( '<button class="button-error pure-button site-primary-reading_button">Continue reading<span class="screen-reader-text"> "%s"</span></button>', 'nateserk_techy_news' ),
             array(
               'span' => array(
                 'class' => array(),

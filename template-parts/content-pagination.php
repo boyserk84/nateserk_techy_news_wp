@@ -13,8 +13,8 @@
     <?php
     the_posts_pagination( array(
       'mid_size' => 5,
-      'prev_text' => __( '<button class="button-error pure-button">Back</button>', 'textdomain' ),
-      'next_text' => __( '<button class="button-error pure-button">Next</button>', 'textdomain' ),
+      'prev_text' => __( '<button class="button-error pure-button site-primary-pagination">Back</button>', 'textdomain' ),
+      'next_text' => __( '<button class="button-error pure-button site-primary-pagination">Next</button>', 'textdomain' ),
     ));
     ?>
     </h3>

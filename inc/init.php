@@ -49,7 +49,9 @@ if ( !function_exists('nateserk_techy_news_get_default_theme_options') ) :
             'nateserk_techy_news-show-header-logo' => false,
             'nateserk_techy_news-header-logo-media-url'=> '',
 
-
+            /** Primary Theme Color */
+            'nateserk_techy_news-custom-theme-color'=>'#ca3c3c',
+            'nateserk_techy_news-custom-theme-text-color'=>'#ffffff',
             /** Link colors **/
             'nateserk_techy_news-custom-link-color'=>'',
             'nateserk_techy_news-custom-link-hover-color'=>'',
@@ -89,3 +91,6 @@ endif;
 /** Load 'Hooks' */
 $nateserk_techy_news_footer_file_path = nateserk_techy_news_file_directory('hooks/menu.php');
 require $nateserk_techy_news_footer_file_path;
+
+$nateserk_techy_news_site_colors_file_path = nateserk_techy_news_file_directory('hooks/site-colors.php');
+require $nateserk_techy_news_site_colors_file_path;
