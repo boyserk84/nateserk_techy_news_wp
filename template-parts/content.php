@@ -26,20 +26,20 @@
 			the_title( '<h2 class="entry-title">' .$categories_html .'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
 
+		if ( 'post' === get_post_type() ) :?>
+		<div class="entry-meta pure-g pure-u-1">
+		<?php nateserk_techy_news_posted_on(); ?>
+		</div><!-- .entry-meta -->
+		<?php
+		endif;
+
 		$tb_size = 'large';
 		$tb_attr = array("class"=>'pure-u-1', "title"=>get_the_title() );
 		if( has_post_thumbnail() ){
 			echo get_the_post_thumbnail( null, $tb_size, $tb_attr);
 		} else {
 			echo '<img src="' .get_template_directory_uri() .'/assets/img/300x190_fff.png" class="pure-u-1"/></a>';
-		}
-
-		if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta pure-g pure-u-1">
-			<?php nateserk_techy_news_posted_on(); ?>
-		</div><!-- .entry-meta -->
-		<?php
-		endif; ?>
+		}?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content pure-g pure-u-1">
