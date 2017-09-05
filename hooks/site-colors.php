@@ -21,7 +21,7 @@
      }
 
  endif;
- add_action( 'nateserk_tinycup_action_before_head', 'nateserk_techy_news_set_global', 0 );
+ add_action( 'nateserk_techy_news_action_before_head', 'nateserk_techy_news_set_global', 0 );
 
 
 if ( ! function_exists( 'nateserk_techy_news_setup_site_primary_color' ) ) :
