@@ -758,12 +758,12 @@ a:active {
 # Content
 --------------------------------------------------------------*/
 .site-content {
-	margin: 2em 2em 2em 5em;
+	margin: 2em 5em 2em 4em;
 	text-align: center;
 }
 
 .site-footer {
-	margin: 2em 2em 2em 5em;
+	margin: 2em 5em 2em 5em;
 }
 
 .site-footer-legal {

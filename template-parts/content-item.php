@@ -22,7 +22,7 @@
         }
       ?>
     </div>
-    <div class="pure-u-md-2-5 pure-u-sm-1 content-text-box">
+    <div class="pure-u-md-2-5 pure-u-sm-1 pure-u-1 content-text-box">
       <?php the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' ); ?>
       <?php
         the_content( sprintf(
