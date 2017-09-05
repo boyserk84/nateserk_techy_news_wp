@@ -44,7 +44,8 @@ if ( ! function_exists( 'nateserk_techy_news_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-header' => esc_html__( 'Primary', 'nateserk_techy_news' ),
+			'menu-header' => esc_html__( 'Header', 'nateserk_techy_news' ),
+			'menu-footer' => esc_html__( 'Footer', 'nateserk_techy_news')
 		) );
 
 		/*
