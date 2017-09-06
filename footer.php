@@ -26,21 +26,34 @@
 			<?php
 			endif; ?>
 
-
-			<div class="pure-u-1">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'nateserk_techy_news' ) ); ?>"><?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'nateserk_techy_news' ), 'WordPress' ); ?></a>
-			</div>
-
 			<div class="pure-u-1"><!--copyright-->
-			Copyright 2017 Techny Tech, Inc. All rights reserved.
+				<?php
+				$currentYear = date("Y");
+				$options = nateserk_techy_news_get_theme_options();
+				$author = $options['nateserk_techy_news-copyright-name'];
+				printf( esc_html__( 'Copyright %s %s. All rights reserved.', 'nateserk_techy_news' ), $currentYear, $author );
+				?>
 			</div><!--copyright-->
 		</div><!-- .site-info -->
 
 		<div class="pure-g pure-u-1 site-footer-legal">
-			No part of this publication may be reproduced, distributed, or transmitted in any form or by any means, including photocopying, recording, or other electronic or mechanical methods, without the prior written permission of the publisher, except in the case of brief quotations embodied in critical reviews and certain other noncommercial uses permitted by copyright law. For permission requests, write to the publisher, addressed “Attention: Permissions Coordinator,” at the address below.
-		</div>
+			<?php
+			$options = nateserk_techy_news_get_theme_options();
+			$statement = $options['nateserk_techy_news-footer-fineprint'];
+			printf( esc_html__( '%s', 'nateserk_techy_news' ), $statement );
+			?>
+		</div><!--fineprint-->
+
+		<?php
+		$options = nateserk_techy_news_get_theme_options();
+		if ($options['nateserk_techy_news-powerby-toggle'] === true) : ?>
+			<div class="pure-u-1">
+			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'nateserk_techy_news' ) ); ?>"><?php
+				/* translators: %s: CMS name, i.e. WordPress. */
+				printf( esc_html__( 'Proudly powered by %s', 'nateserk_techy_news' ), 'WordPress' ); ?></a>
+			</div><!--powerby-->
+		<?php endif; ?>
+
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
