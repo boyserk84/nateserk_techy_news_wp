@@ -15,17 +15,6 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info pure-g">
-			<?php
-			// Footer menu
-			if ( has_nav_menu( 'menu-footer') ) : ?>
-			<div class="pure-u-1 pure-menu pure-menu-horizontal">
-					<ul class="pure-menu-list pure-u-md-1 pure-u-1">
-						<?php do_action('nateserk_techy_news_action_setup_menu', 'menu-footer'); ?>
-					</ul>
-			</div>
-			<?php
-			endif; ?>
-
 			<div class="pure-u-1"><!--copyright-->
 				<?php
 				$currentYear = date("Y");
@@ -52,7 +41,17 @@
 				/* translators: %s: CMS name, i.e. WordPress. */
 				printf( esc_html__( 'Proudly powered by %s', 'nateserk_techy_news' ), 'WordPress' ); ?></a>
 			</div><!--powerby-->
-		<?php endif; ?>
+		<?php endif;
+
+		// Footer menu
+		if ( has_nav_menu( 'menu-footer') ) : ?>
+		<div class="pure-u-1 pure-menu pure-menu-horizontal site-footer-legal">
+				<ul class="pure-menu-list pure-u-md-1 pure-u-1">
+					<?php do_action('nateserk_techy_news_action_setup_menu', 'menu-footer'); ?>
+				</ul>
+		</div>
+		<?php
+		endif; ?>
 
 	</footer><!-- #colophon -->
 </div><!-- #page -->
