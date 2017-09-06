@@ -16,8 +16,9 @@ get_header(); ?>
 
 	<div id="primary" class="pure-g content-wrapper content-area">
 		<main id="main" class="site-main">
-
 		<?php
+		get_sidebar('header');
+
 		if ( have_posts() ) :
 
 			if ( is_home() && !is_front_page() ) : ?>
@@ -40,5 +41,5 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
+get_sidebar('footer');
 get_footer();

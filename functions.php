@@ -103,9 +103,19 @@ add_action( 'after_setup_theme', 'nateserk_techy_news_content_width', 0 );
  */
 function nateserk_techy_news_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'nateserk_techy_news' ),
-		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'nateserk_techy_news' ),
+		'name'          => esc_html__( 'Footer', 'nateserk_techy_news' ),
+		'id'            => 'sidebar-footer',
+		'description'   => esc_html__( 'Add widgets here. This will be located after the content area.', 'nateserk_techy_news' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Header', 'nateserk_techy_news' ),
+		'id'            => 'sidebar-header',
+		'description'   => esc_html__( 'Add widgets here. This will be located prior the content area.', 'nateserk_techy_news' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',

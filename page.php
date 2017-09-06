@@ -18,6 +18,7 @@ get_header(); ?>
 		<main id="main" class="site-main">
 
 			<?php
+			get_sidebar('header');
 			while ( have_posts() ) : the_post();
 
 				get_template_part( 'template-parts/content', 'page' );
@@ -34,5 +35,5 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
+get_sidebar('footer');
 get_footer();
