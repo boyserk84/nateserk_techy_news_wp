@@ -38,7 +38,7 @@ if ( !function_exists('nateserk_techy_news_get_default_theme_options') ) :
             'nateserk_techy_news-google-plus-url'      => '',
             'nateserk_techy_news-tumblr-url'           => '',
             'nateserk_techy_news-snapchat-url'         => '',
-            'nateserk_techy_news-enable-social'        => true,
+            'nateserk_techy_news-disable-social'        => false,
 
             /**related post options*/
             'nateserk_techy_news-enable-related-posts' => true,

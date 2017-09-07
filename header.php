@@ -40,9 +40,26 @@ do_action( 'nateserk_techy_news_action_before_head' );
 						<a class="site-title pure-menu-heading pure-u-md-1-5 site-primary" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php the_custom_logo(); bloginfo( 'name' );?></a>
 						<ul class="pure-menu-list pure-u-md-3-5"><?php do_action('nateserk_techy_news_action_setup_menu', 'menu-header'); ?></ul>
 						<div class="content-center pure-u-sm-1 pure-u-md-1-5">
-							<i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
-							<i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
-							<i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+							<?php
+								// TODO: move this to action
+								$options = nateserk_techy_news_get_theme_options();
+								if ($options['nateserk_techy_news-disable-social'] === false) :
+										if (!empty($options['nateserk_techy_news-facebook-url'])) : ?>
+											<a href="<?php echo $options['nateserk_techy_news-facebook-url']; ?>"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+										<?php
+										endif;
+
+										if (!empty($options['nateserk_techy_news-twitter-url'])) : ?>
+											<a href="<?php echo $options['nateserk_techy_news-twitter-url']; ?>"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+										<?php
+										endif;
+
+										if (!empty($options['nateserk_techy_news-instgram-url'])) : ?>
+											<a href="<?php echo $options['nateserk_techy_news-instgram-url']; ?>"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+										<?php
+										endif;
+								endif;
+							?>
 						</div>
 				</div>
 		<!--header-->
