@@ -9,11 +9,11 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area pure-g pure-u-1 site-content">
 		<main id="main" class="site-main">
 
-			<section class="error-404 not-found">
-				<header class="page-header">
+			<section class="error-404 not-found pure-u-1">
+				<header class="page-header pure-u-1">
 					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'nateserk_techy_news' ); ?></h1>
 				</header><!-- .page-header -->
 
