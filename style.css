@@ -757,8 +757,13 @@ a:active {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+.no-results,
 .site-content {
 	margin: 2em 5em 2em 4em;
+	text-align: center;
+}
+
+.page-content {
 	text-align: center;
 }
 
