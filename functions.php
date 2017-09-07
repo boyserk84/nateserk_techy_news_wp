@@ -102,20 +102,33 @@ add_action( 'after_setup_theme', 'nateserk_techy_news_content_width', 0 );
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
 function nateserk_techy_news_widgets_init() {
+	// Global
 	register_sidebar( array(
 		'name'          => esc_html__( 'Footer', 'nateserk_techy_news' ),
 		'id'            => 'sidebar-footer',
-		'description'   => esc_html__( 'Add widgets here. This will be located after the content area.', 'nateserk_techy_news' ),
+		'description'   => esc_html__( 'Add widgets here. This will be located after the content area of all posts.', 'nateserk_techy_news' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
 
+	// Global
 	register_sidebar( array(
 		'name'          => esc_html__( 'Header', 'nateserk_techy_news' ),
 		'id'            => 'sidebar-header',
-		'description'   => esc_html__( 'Add widgets here. This will be located prior the content area.', 'nateserk_techy_news' ),
+		'description'   => esc_html__( 'Add widgets here. This will be located prior the content area of all posts.', 'nateserk_techy_news' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+
+	// Archive
+	register_sidebar( array(
+		'name'          => esc_html__( 'Archive Page', 'nateserk_techy_news' ),
+		'id'            => 'sidebar-archive',
+		'description'   => esc_html__( 'Add widgets here. This will be located at the footer of archive page.', 'nateserk_techy_news' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
