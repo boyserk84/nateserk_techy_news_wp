@@ -99,3 +99,6 @@ require $nateserk_techy_news_footer_file_path;
 
 $nateserk_techy_news_site_colors_file_path = nateserk_techy_news_file_directory('hooks/site-colors.php');
 require $nateserk_techy_news_site_colors_file_path;
+
+$nateserk_techy_news_social_links_file_path = nateserk_techy_news_file_directory('hooks/social-links.php');
+require $nateserk_techy_news_social_links_file_path;

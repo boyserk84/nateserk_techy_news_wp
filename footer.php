@@ -15,6 +15,9 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info pure-g">
+			<div class="pure-u-1">
+					<h1><?php do_action( 'nateserk_technynews_action_show_social_links' ); ?></h1>
+			<div>
 			<div class="pure-u-1"><!--copyright-->
 				<?php
 				$currentYear = date("Y");
