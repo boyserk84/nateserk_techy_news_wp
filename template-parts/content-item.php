@@ -11,7 +11,7 @@
 <!--item-->
 <div class="pure-u-1 content-item">
   <div class="pure-g">
-    <div class="pure-u-md-2-5 pure-u-sm-1"><a href="<?php echo esc_url( get_permalink() ); ?>">
+    <div class="pure-u-md-2-5 pure-u-sm-1 content-item-header"><a href="<?php echo esc_url( get_permalink() ); ?>">
       <?php
         $tb_size = array();
         $tb_attr = array("class"=>'pure-u-1', "title"=>get_the_title() );
@@ -22,7 +22,7 @@
         }
       ?>
     </div>
-    <div class="pure-u-md-2-5 pure-u-sm-1 pure-u-1 content-text-box">
+    <div class="pure-u-md-2-5 pure-u-sm-1 pure-u-1">
       <?php the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' ); ?>
       <?php
         the_content( sprintf(
