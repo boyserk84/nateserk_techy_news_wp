@@ -940,6 +940,19 @@ a:active {
 	display: block;
 }
 
+.comment-meta,
+.comment-content {
+	vertical-align: middle;
+}
+
+.comment-meta {
+	width:30%;
+	float:left;
+}
+.comment-content {
+	width:100%;
+}
+
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
@@ -965,6 +978,8 @@ a:active {
 	margin-top: 0;
 	padding: 0;
 }
+
+
 
 /* Make sure embeds and iframes fit their containers. */
 embed,
