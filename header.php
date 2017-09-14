@@ -55,7 +55,7 @@ do_action( 'nateserk_techy_news_action_before_head' );
 							<div class="pure-u-sm-1 pure-u-md-1-5 pure-u-1-5" style="margin-right:1.5em;">
 								<?php do_action( 'nateserk_technynews_action_show_social_links' ); ?>
 							</div>
-							<div class="pure-u-sm-1 pure-u-md-1-5 pure-u-1-5" style="vertical-align:middle">
+							<div class="pure-u-sm-1 pure-u-md-1-5 pure-u-1-5">
 								<?php get_search_form(); ?>
 							</div>
 						</div><!-- Social links & search -->
