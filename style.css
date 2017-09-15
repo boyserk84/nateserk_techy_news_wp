@@ -936,21 +936,22 @@ a:active {
 	word-wrap: break-word;
 }
 
+.comment-list li,
+.comment-list ol {
+	list-style: none;
+}
+
 .bypostauthor {
 	display: block;
 }
 
+.comment-author,
 .comment-meta,
 .comment-content {
 	vertical-align: middle;
 }
-
-.comment-meta {
-	width:30%;
-	float:left;
-}
 .comment-content {
-	width:100%;
+	text-align: justify;
 }
 
 /*--------------------------------------------------------------

@@ -102,3 +102,6 @@ require $nateserk_techy_news_site_colors_file_path;
 
 $nateserk_techy_news_social_links_file_path = nateserk_techy_news_file_directory('hooks/social-links.php');
 require $nateserk_techy_news_social_links_file_path;
+
+$nateserk_techy_news_custom_comment_file_path = nateserk_techy_news_file_directory('hooks/custom-comment.php');
+require $nateserk_techy_news_custom_comment_file_path;

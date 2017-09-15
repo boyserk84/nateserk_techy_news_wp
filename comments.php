@@ -47,11 +47,13 @@ if ( post_password_required() ) {
 
 		<?php the_comments_navigation(); ?>
 
-		<ol class="comment-list">
+		<ol class="comment-list pure-g pure-u-1 pure-u-sm-1 pure-u-md-1">
 			<?php
 				wp_list_comments( array(
 					'style'      => 'ol',
 					'short_ping' => true,
+					'avatar_size'=> 64,
+					'callback'=> 'nateserk_techy_news_setup_custom_comments'
 				) );
 			?>
 		</ol><!-- .comment-list -->
