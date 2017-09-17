@@ -783,10 +783,26 @@ a:active {
   margin-top: 5%;
 }
 
+.content-item-mini,
+.content-item-feature,
 .content-item {
-  margin:3em;
   text-align: justify;
   font-family: inherit;
+}
+
+.content-listing {
+	margin:0 3em 3em 3em;
+}
+
+.content-item-feature {
+	margin:0 3em 0 0;
+}
+.content-item-mini {
+	margin:3em 3em 0 0;
+}
+
+.content-item {
+	margin: 3em 3em 3em 0;
 }
 
 .entry-content {
