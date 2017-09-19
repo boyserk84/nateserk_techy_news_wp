@@ -12,6 +12,7 @@
 <div class="pure-g pure-u-1 content-item-feature">
     <div class="pure-u-sm-1 pure-u-md-1 pure-u-1 content-item-feature-header"><a href="<?php echo esc_url( get_permalink() ); ?>">
       <?php
+        $recent_html = nateserk_techy_news_setup_recent_label();
         $tb_size = array();
         $tb_attr = array("class"=>'pure-u-1', "title"=>get_the_title() );
         if( has_post_thumbnail() ){
@@ -22,7 +23,7 @@
       ?>
     </div>
     <div class="pure-u-sm-1 pure-u-md-22-24 pure-u-22-24">
-      <?php the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' ); ?>
+      <?php the_title( $recent_html .'<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' ); ?>
       <?php
         the_content( sprintf(
           wp_kses(

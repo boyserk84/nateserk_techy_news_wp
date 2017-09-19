@@ -105,3 +105,6 @@ require $nateserk_techy_news_social_links_file_path;
 
 $nateserk_techy_news_custom_comment_file_path = nateserk_techy_news_file_directory('hooks/custom-comment.php');
 require $nateserk_techy_news_custom_comment_file_path;
+
+$nateserk_techy_news_utility_file_path = nateserk_techy_news_file_directory('hooks/utility.php');
+require $nateserk_techy_news_utility_file_path;

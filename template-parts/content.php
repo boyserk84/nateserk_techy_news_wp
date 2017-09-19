@@ -12,6 +12,8 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header pure-g pure-u-1">
 		<?php
+		$recent_html = nateserk_techy_news_setup_recent_label();
+
 		// Grab category this post belongs to.
 		$categories_list = get_the_category_list( esc_html__( ', ', 'nateserk_techy_news' ) );
 		$categories_html = '';
@@ -20,7 +22,7 @@
 			$categories_html = sprintf( '<button class="pure-button cat-links site-primary-category">' . esc_html__( '%1$s', 'nateserk_techy_news' ) . '</button> ', $categories_list ); // WPCS: XSS OK.
 		}
 
-		echo '<div class="pure-u-1 cat-header">' .$categories_html .'</div>';
+		echo '<div class="pure-u-1 cat-header">' .$recent_html .$categories_html .'</div>';
 
 		if ( is_singular() ) :
 			the_title( '<h1 class="entry-title pure-u-1">', '</h1>' );
