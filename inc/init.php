@@ -62,6 +62,11 @@ if ( !function_exists('nateserk_techy_news_get_default_theme_options') ) :
             'nateserk_techy_news-footer-fineprint'=>'No part of this publication may be reproduced, distributed, or transmitted in any form or by any means, including photocopying, recording, or other electronic or mechanical methods, without the prior written permission of the publisher, except in the case of brief quotations embodied in critical reviews and certain other noncommercial uses permitted by copyright law. For permission requests, write to the publisher, addressed “Attention: Permissions Coordinator,” at the address below.',
             'nateserk_techy_news-powerby-toggle'=> true,
 
+            'nateserk_techy_news-post-listing-feature-enable'=>true,
+            'nateserk_techy_news-post-listing-mini-enable'=>true,
+            'nateserk_techy_news-post-listing-feature-num'=> 1,
+            'nateserk_techy_news-post-listing-mini-num'=>2,
+
             /** Google Analytics */
             'nateserk_techy_news-g-analytic-tracking-id'=>'',
 
