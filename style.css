@@ -818,6 +818,7 @@ a:active {
 .cat-links a,
 .pagination a{
 	text-decoration: none;
+	text-transform: capitalize;
 }
 
 .cat-header
@@ -879,6 +880,7 @@ a:active {
 /** Buttons */
 .button-success,
 .button-error,
+.button-update-label,
 .button-warning,
 .button-secondary {
   color: white;
@@ -899,7 +901,11 @@ a:active {
 }
 
 .button-secondary {
-    background: rgb(66, 184, 221); /* this is a light blue */
+		background: rgb(66, 184, 221); /* this is a light blue */
+}
+
+.button-update-label {
+		background: rgb(242, 120, 75); /* this is an (CRUSTA) orange. */
 }
 
 .button-xsmall {
