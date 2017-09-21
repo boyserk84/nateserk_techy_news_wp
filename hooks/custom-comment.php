@@ -56,3 +56,22 @@ function nateserk_techy_news_setup_custom_comments($comment, $args, $depth) {
       <?php
 }
 endif;
+
+/**
+ * Customized the comment form
+ *
+ * @param array $form
+ * @return array $form
+ *
+ */
+if ( !function_exists('nateserk_techy_news_comment_form') ) :
+
+    function nateserk_techy_news_comment_form($form) {
+        $required = get_option('require_name_email');
+        $form['submit_button'] = '<button type="submit" name= "submit" class="pure-button site-primary-reading_button">' ._('Post Comment') .'</button>';
+        return $form;
+    }
+
+endif;
+
+add_filter('comment_form_defaults', 'nateserk_techy_news_comment_form');
