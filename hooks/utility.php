@@ -70,7 +70,7 @@ function nateserk_techy_news_setup_update_post_label() {
 endif;
 
 /**
-* Setup the labels (new or update) of the current post.
+* Display the labels (new or update) of the current post.
 */
 if ( ! function_exists( 'nateserk_techy_news_display_post_labels' ) ) :
 function nateserk_techy_news_display_post_labels() {
@@ -81,6 +81,9 @@ endif;
 add_action( 'nateserk_technynews_action_show_post_labels', 'nateserk_techy_news_display_post_labels', 0 );
 
 
+/**
+* Display the category labels of the current post.
+*/
 if ( ! function_exists( 'nateserk_techy_news_display_post_category_labels' ) ) :
 function nateserk_techy_news_display_post_category_labels() {
   $categories_list = get_the_category_list( esc_html__( ', ', 'nateserk_techy_news' ) );
