@@ -10,7 +10,7 @@
 ?>
 <!--item-->
 <div class="pure-g content-item">
-    <div class="pure-u-sm-1 pure-u-md-2-5 content-item-header"><a href="<?php echo esc_url( get_permalink() ); ?>">
+    <div class="pure-u-sm-1 pure-u-md-2-5 pure-u-2-5 content-item-header"><a href="<?php echo esc_url( get_permalink() ); ?>">
       <?php
         $tb_size = array();
         $tb_attr = array("class"=>'pure-u-1', "title"=>get_the_title() );

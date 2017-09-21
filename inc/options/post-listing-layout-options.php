@@ -49,7 +49,7 @@ $wp_customize->add_control( $NUM_FEAT_ID, array(
     'description'=> __(''),
     'settings'  => $NUM_FEAT_ID,
     'type'	  	=> 'select',
-    'choices'   => array(1,2,3,4,5,6),
+    'choices'   => array(1=>1,2=>2,3=>3,4=>4,5=>5,6=>6),
     'priority'  => 14
 ) );
 
@@ -86,6 +86,6 @@ $wp_customize->add_control( $NUM_MINI_ID, array(
     'description'=> __(''),
     'settings'  => $NUM_MINI_ID,
     'type'	  	=> 'select',
-    'choices'   => array(2,4,6),
+    'choices'   => array(2=>2,4=>4,6=>6),
     'priority'  => 16
 ) );
