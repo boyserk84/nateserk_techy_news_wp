@@ -21,7 +21,7 @@
         }
       ?>
     </div>
-    <div class="pure-u-sm-1 pure-u-md-22-24 pure-u-22-24">
+    <div class="pure-u-sm-1 pure-u-md-22-24 pure-u-22-24 content-excerpt">
       <?php
         do_action('nateserk_technynews_action_show_post_labels');
         the_title( '<h1 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1>' );

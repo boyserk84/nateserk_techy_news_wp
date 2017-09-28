@@ -9,8 +9,8 @@
 
 ?>
 <!--item-->
-<div class="pure-g content-item">
-    <div class="pure-u-sm-1 pure-u-md-2-5 pure-u-2-5 content-item-header"><a href="<?php echo esc_url( get_permalink() ); ?>">
+<div class="content-item">
+    <div class="pure-u-sm-1 pure-u-md-2-5 content-item-header"><a href="<?php echo esc_url( get_permalink() ); ?>">
       <?php
         $tb_size = array();
         $tb_attr = array("class"=>'pure-u-1', "title"=>get_the_title() );
@@ -21,7 +21,7 @@
         }
       ?>
     </div>
-    <div class="pure-u-sm-1 pure-u-md-12-24 pure-u-12-24">
+    <div class="pure-u-sm-1 pure-u-md-12-24 pure-u-12-24 content-excerpt">
       <h4> <?php do_action('nateserk_technynews_action_show_post_labels');?> </h4>
       <?php
         the_title( '<h3 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' );

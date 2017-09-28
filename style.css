@@ -757,6 +757,10 @@ a:active {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+.entry-title {
+	text-align: left;
+}
+
 .no-results,
 .site-content {
 	margin: 2em 5em 2em 4em;
@@ -786,12 +790,11 @@ a:active {
 .content-item-mini,
 .content-item-feature,
 .content-item {
-  text-align: justify;
   font-family: inherit;
 }
 
 .content-listing {
-	margin:0 3em 3em 3em;
+	margin:0 0 3em 0;
 }
 
 .content-item-feature {
@@ -805,6 +808,7 @@ a:active {
 	margin: 3em 3em 3em 0;
 }
 
+.content-excerpt,
 .entry-content {
 	text-align: justify;
 }

@@ -20,7 +20,7 @@ $offset = ($feat_post_enable===true)?$feat_post_num:0;
 $endMiniPostIndex = ($mini_post_enable===true)?($offset + $mini_post_num):0;
 
 ?>
-<div class="pure-u-sm-1 pure-u-md-1 pure-u-1 content-listing">
+<div class="pure-g pure-u-sm-1 pure-u-md-1 pure-u-1 content-listing">
 <?php
 /* Start the Loop */
 while ( have_posts() ) : the_post();
@@ -33,7 +33,7 @@ while ( have_posts() ) : the_post();
    */
 
   if ( $index == $offset ) { // this is for mini post section.
-    echo '<div class="pure-u-1" style="text-align:left;">';
+    echo '<div class="pure-u-sm-1 pure-u-md-1 pure-u-1">';
   }
 
   if ( $index < $offset ) :
