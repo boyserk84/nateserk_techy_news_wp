@@ -17,7 +17,7 @@
         if( has_post_thumbnail() ){
           echo get_the_post_thumbnail( null, $tb_size, $tb_attr);
         } else {
-          echo '<img src="' .get_template_directory_uri() .'/assets/img/300x190_fff.png" class="pure-u-1 pure-u-sm-1 pure-u-md-1"/></a>';
+          echo '<img src="' .get_template_directory_uri() .'/assets/img/300x190_fff.png" class="pure-u-1 pure-u-md-1 pure-u-1"/></a>';
         }
       ?>
     </div>

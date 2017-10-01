@@ -33,7 +33,7 @@ while ( have_posts() ) : the_post();
    */
 
   if ( $index == $offset ) { // this is for mini post section.
-    echo '<div class="pure-u-sm-1 pure-u-md-1 pure-u-1">';
+    echo '<div class="pure-u-sm-1 pure-u-md-1 pure-u-1 content-mini-listing">';
   }
 
   if ( $index < $offset ) :
