@@ -7,10 +7,17 @@
  * @package nateserk_techy_news
  */
 
+$isMobile = nateserk_techy_news_is_mobile_view();
+
 ?>
 <!--item-->
 <div class="content-item">
-    <div class="pure-u-sm-1 pure-u-md-2-5 content-item-header"><a href="<?php echo esc_url( get_permalink() ); ?>">
+
+<?php if ($isMobile) :
+    // Mobile view: Enforce the same template.
+    get_template_part( 'template-parts/content', 'mini_item' );
+else: ?>
+    <div class="pure-u-sm-1 pure-u-md-2-5 pure-u-lg-2-5 content-item-header"><a href="<?php echo esc_url( get_permalink() ); ?>">
       <?php
         $tb_size = array();
         $tb_attr = array("class"=>'pure-u-1', "title"=>get_the_title() );
@@ -41,7 +48,7 @@
           get_the_title()
         ) );
         ?>
-
     </div>
 </div>
 <!--item-->
+<? endif; ?>

@@ -16,9 +16,9 @@
 		do_action('nateserk_technynews_action_show_post_labels');
 
 		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title pure-u-1">', '</h1>' );
+			the_title( '<h1 class="entry-title-post pure-u-1">', '</h1>' );
 		else :
-			the_title( '<h2 class="entry-title pure-u-1">' .'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+			the_title( '<h2 class="entry-title-post pure-u-1">' .'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
 
 		if ( 'post' === get_post_type() ) :?>
