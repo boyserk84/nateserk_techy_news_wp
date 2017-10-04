@@ -34,7 +34,13 @@
 			echo get_the_post_thumbnail( null, $tb_size, $tb_attr);
 		} else {
 			echo '<img src="' .get_template_directory_uri() .'/assets/img/300x190_fff.png" class="pure-u-1"/></a>';
-		}?>
+		}
+		?>
+		<p>
+		<?php
+			// TODO: Fix the margin-bottom
+			do_action('nateserk_technynews_action_show_post_tags_labels'); ?>
+		</p>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content pure-g pure-u-1">
