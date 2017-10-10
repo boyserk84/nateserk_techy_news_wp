@@ -12,6 +12,6 @@ if ( ! is_active_sidebar( 'sidebar-header' ) ) {
 }
 ?>
 
-<aside id="secondary" class="pure-g pure-u-1 widget-area">
+<aside id="secondary" class="pure-g pure-u-sm-1 pure-u-md-1 pure-u-1 widget-area sidebar-header">
 	<?php dynamic_sidebar( 'sidebar-header' ); ?>
 </aside><!-- #secondary -->

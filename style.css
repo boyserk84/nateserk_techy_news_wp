@@ -861,6 +861,7 @@ a:active {
 		.content-mini-listing {padding: 1em;}
 		.entry-content {padding: 1em;}
 		.entry-title-post {padding: 1em;}
+		.sidebar-header{margin-top: 1em;}
 }
 /* pure-hidden-sm */
 @media screen and (min-width:35.5em) and (max-width:47.938em) {
@@ -877,6 +878,7 @@ a:active {
 		.content-mini-listing {padding: 1em;}
 		.entry-content {padding: 1em;}
 		.entry-title-post{padding: 1em;}
+		.sidebar-header{margin-top: 1em;}
 }
 /* pure-hidden-md */
 @media screen and (min-width:48em) and (max-width:63.938em) {
