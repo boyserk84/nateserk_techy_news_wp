@@ -840,6 +840,10 @@ a:active {
 	margin-top: 2em;
 }
 
+.tags-section {
+	margin-bottom: -1.5em;
+}
+
 /* em pure-hidden values */
 
 /* pure-hidden-xs */

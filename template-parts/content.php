@@ -36,9 +36,8 @@
 			echo '<img src="' .get_template_directory_uri() .'/assets/img/300x190_fff.png" class="pure-u-1"/></a>';
 		}
 		?>
-		<p>
+		<p class="tags-section">
 		<?php
-			// TODO: Fix the margin-bottom
 			do_action('nateserk_technynews_action_show_post_tags_labels'); ?>
 		</p>
 	</header><!-- .entry-header -->
