@@ -83,6 +83,9 @@ if ( !function_exists('nateserk_techy_news_get_default_theme_options') ) :
             'nateserk_techy_news-post-listing-feature-num'=> 1,
             'nateserk_techy_news-post-listing-mini-num'=>2,
 
+            /** header style */
+            'nateserk_techy_news-header-style'=>'default',
+
             /** Google Analytics */
             'nateserk_techy_news-g-analytic-tracking-id'=>'',
 
