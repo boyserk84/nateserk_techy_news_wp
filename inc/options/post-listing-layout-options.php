@@ -13,8 +13,29 @@ $wp_customize->add_section( $SECTION_NAME, array(
     'capability'     => 'edit_theme_options',
     'theme_supports' => '',
     'description' => __('Customize a layout of the posts listing.'),
-    'title'          => __( 'Listing Layout', 'nateserk_techy_news' ),
+    'title'          => __( 'Site Layout', 'nateserk_techy_news' ),
 ) );
+
+
+$HEADER_STYLE_ID = 'nateserk_techy_news_theme_options[nateserk_techy_news-header-style]';
+$HEADER_STYLE_KEY = 'nateserk_techy_news-header-style';
+/** Header style */
+$wp_customize->add_setting( $HEADER_STYLE_ID, array(
+    'capability'		=> 'edit_theme_options',
+    'default'			=> $defaults[$HEADER_STYLE_KEY],
+    'sanitize_callback' => 'nateserk_techny_news_sanitize_select'
+) );
+
+$wp_customize->add_control( $HEADER_STYLE_ID, array(
+    'label'		=> __( 'Header Style', 'nateserk_techy_news' ),
+    'section'   => $SECTION_NAME,
+    'description'=> __(''),
+    'settings'  => $HEADER_STYLE_ID,
+    'type'	  	=> 'select',
+    'choices'   => array('default'=>'Default Style','newsweekly'=>'Newsweekly Style','complex'=>'Complex Style (Icon Only)'),
+    'priority'  => 12
+) );
+
 
 $SHOW_FEATURE_ID = 'nateserk_techy_news_theme_options[nateserk_techy_news-post-listing-feature-enable]';
 $SHOW_FEATURE_KEY = 'nateserk_techy_news-post-listing-feature-enable';
