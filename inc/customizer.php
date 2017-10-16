@@ -46,8 +46,8 @@ function nateserk_techy_news_customize_register( $wp_customize ) {
   $social_links_option_file_path = nateserk_techy_news_file_directory('inc/options/social-links-options.php');
   require $social_links_option_file_path;
 
-  /** Post listing options. */
-  $listing_layout_option_file_path = nateserk_techy_news_file_directory('inc/options/post-listing-layout-options.php');
+  /** Site listing options. */
+  $listing_layout_option_file_path = nateserk_techy_news_file_directory('inc/options/site-listing-layout-options.php');
   require $listing_layout_option_file_path;
 }
 add_action( 'customize_register', 'nateserk_techy_news_customize_register' );

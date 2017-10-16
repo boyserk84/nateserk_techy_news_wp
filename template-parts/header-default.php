@@ -23,7 +23,7 @@
 
         <?php // TODO: P2 Making menu collapsable --> ?>
         <ul class="pure-menu-list pure-u-sm-1 pure-u-12-24 pure-u-md-12-24" style="vertical-align:middle">
-            <?php do_action('nateserk_techy_news_action_setup_menu', 'menu-header'); ?>
+            <?php do_action('nateserk_techy_news_action_setup_menu', 'menu-header', 'default'); ?>
         </ul><!-- menu -->
 
         <div class="pure-u-sm-1 pure-u-md-8-24 pure-u-8-24" style="vertical-align:middle">

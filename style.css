@@ -844,6 +844,20 @@ a:active {
 	margin-bottom: -1.5em;
 }
 
+.site-title-newsweekly,
+.site-menu-newsweekly {
+	text-align: center;
+}
+
+.site-menu-newsweekly {
+	background-color: white;
+}
+
+.site-primary-menu-item-newsweekly {
+	color: black;
+	font-weight: bold;
+}
+
 /* em pure-hidden values */
 
 /* pure-hidden-xs */
