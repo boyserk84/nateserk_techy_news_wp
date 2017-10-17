@@ -50,7 +50,7 @@
 		if ( has_nav_menu( 'menu-footer') ) : ?>
 		<div class="pure-u-1 pure-menu pure-menu-horizontal site-footer-legal">
 				<ul class="pure-menu-list pure-u-md-1 pure-u-1">
-					<?php do_action('nateserk_techy_news_action_setup_menu', 'menu-footer'); ?>
+					<?php do_action('nateserk_techy_news_action_setup_menu', 'menu-footer','footer'); ?>
 				</ul>
 		</div>
 		<?php
