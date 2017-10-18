@@ -147,6 +147,11 @@ function nateserk_techy_news_scripts() {
 
 	wp_enqueue_script( 'nateserk_techy_news-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
+	/* Jquery */
+	wp_enqueue_script( 'nateserk_techy_news-jquery', get_template_directory_uri() .'/assets/library/jquery/jquery-3.2.1.min.js', array(), '3.2.1', true );
+
+	wp_enqueue_script( 'nateserk_techy_news-main-js', get_template_directory_uri() . '/js/main.js', array(), '20171017', true );
+
 	/*Font-Awesome-master*/
 	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/assets/library/font-awesome/css/font-awesome.min.css', array(), '4.7.0' );
 
