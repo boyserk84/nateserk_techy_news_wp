@@ -6,7 +6,7 @@
  *
  * @package nateserk_techy_news
  */
-
+$isMobile = nateserk_techy_news_is_mobile_view();
 ?>
 <!--header-->
     <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed site-primary">
@@ -16,14 +16,14 @@
           </div><!--collpase-button-->
           <div class="pure-u-sm-1 pure-u-xs-1 pure-u-1">
           <?php
-            if ( has_custom_logo() ) :
+            if ( has_custom_logo() && !$isMobile ) :
               the_custom_logo();
             else:?>
               <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' );?></a>
             <?php
             endif;
           ?>
-          </div>
+          </div><!--logo-->
         </div>
 
         <div class="pure-u-sm-1 pure-u-10-24 pure-u-md-10-24" style="vertical-align:middle">
@@ -34,8 +34,8 @@
           </div>
         </div><!--menu div-->
 
-        <div class="pure-u-sm-1 pure-u-md-8-24 pure-u-8-24 pure-u-8-24" style="vertical-align:middle">
-          <div class="pure-u-sm-1 pure-u-md-1-5 pure-u-1-5" style="margin-right:1.5em;">
+        <div class="pure-u-xs-1 pure-u-sm-1 pure-u-md-8-24 pure-u-8-24" style="vertical-align:middle">
+          <div class="pure-u-xs-1 pure-u-sm-1 pure-u-md-1-5 pure-u-1-5" style="margin-right:1.5em;">
             <?php do_action( 'nateserk_technynews_action_show_social_links' ); ?>
           </div>
           <div class="pure-u-sm-1 pure-u-md-1-5 pure-u-1-5 pure-hidden-xs pure-hidden-sm">
