@@ -853,6 +853,10 @@ a:active {
 	background-color: white;
 }
 
+.site-menu-newsweekly-collapse {
+	background-color: inherit;
+}
+
 .site-primary-menu-item-newsweekly {
 	color: black;
 	font-weight: bold;
