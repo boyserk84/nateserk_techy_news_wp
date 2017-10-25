@@ -92,7 +92,7 @@ function nateserk_techy_news_display_post_category_labels() {
     foreach($categories_list as $item)
     {
       /* translators: 1: list of categories. */
-      $categories_html = $categories_html .sprintf( '<button class="pure-button button-update cat-links site-primary-category">' . esc_html__( '%1$s', 'nateserk_techy_news' ) . '</button> ', $item->name ); // WPCS: XSS OK.
+      $categories_html = $categories_html .sprintf( '<button class="pure-button button-update cat-links site-primary-category"><a href="' .get_category_link( $item->term_id ) .'"">' . esc_html__( '%1$s', 'nateserk_techy_news' ) . '</button> ', $item->name ); // WPCS: XSS OK.
     }
   }
 
