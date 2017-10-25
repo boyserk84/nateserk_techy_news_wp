@@ -86,11 +86,14 @@ add_action( 'nateserk_technynews_action_show_post_labels', 'nateserk_techy_news_
 */
 if ( ! function_exists( 'nateserk_techy_news_display_post_category_labels' ) ) :
 function nateserk_techy_news_display_post_category_labels() {
-  $categories_list = get_the_category_list( esc_html__( ', ', 'nateserk_techy_news' ) );
+  $categories_list = get_the_category();
   $categories_html = '';
   if ( $categories_list ) {
-    /* translators: 1: list of categories. */
-    $categories_html = sprintf( '<button class="pure-button button-update cat-links site-primary-category">' . esc_html__( '%1$s', 'nateserk_techy_news' ) . '</button> ', $categories_list ); // WPCS: XSS OK.
+    foreach($categories_list as $item)
+    {
+      /* translators: 1: list of categories. */
+      $categories_html = $categories_html .sprintf( '<button class="pure-button button-update cat-links site-primary-category">' . esc_html__( '%1$s', 'nateserk_techy_news' ) . '</button> ', $item->name ); // WPCS: XSS OK.
+    }
   }
 
   if (!empty($categories_html)) {
@@ -108,7 +111,8 @@ function nateserk_techy_news_display_post_tags_labels() {
   $tags_list = get_the_tags();
   $tags_html = '';
   if ( $tags_list ) {
-    foreach($tags_list as $item) {
+    foreach($tags_list as $item)
+    {
       /* translators: 1: list of categories. */
       $tags_html = $tags_html .sprintf( '<button class="pure-button button-update cat-links site-primary-category"><a href="'.get_tag_link($item->term_id)  .'">' . esc_html__( '%1$s', 'nateserk_techy_news' ) . '</a></button> ', $item->name ); // WPCS: XSS OK.
     }
