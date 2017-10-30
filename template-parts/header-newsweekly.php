@@ -20,7 +20,7 @@ $isMobile = nateserk_techy_news_is_mobile_view();
         <?php
         endif;?>
         <div class="pure-u-sm-3-5 pure-u-xs-3-5 pure-u-3-5 pure-hidden-lg pure-hidden-xl pure-hidden-md">
-          <i class="fa fa-bars fa-lg fa-2x" aria-hidden="true" id="collapse-button"></i>
+          <div class="pure-u-2-5">
           <!-- Collapsable Menu -->
               <div class="site-menu-newsweekly-collapse home-menu pure-menu pure-menu-vertical pure-u-1 pure-hidden-lg pure-hidden-xl pure-hidden-md collapse-menu-newsweekly" id="collapse-menu">
                     <ul class="pure-menu-list">
@@ -28,10 +28,14 @@ $isMobile = nateserk_techy_news_is_mobile_view();
                     </ul><!-- menu -->
               </div>
           <!-- Collasable Menu -->
-        </div><!--collpase-button-->
+          </div>
+          <div class="pure-u-3-5">
+            <i class="fa fa-bars fa-lg fa-2x" aria-hidden="true" id="collapse-button"></i>
+          </div>
+        </div><!--collpase-section-->
     </div>
 
-    <div class="site-menu-newsweekly pure-menu-horizontal pure-menu-heading pure-u-sm-1 pure-u-1 pure-u-md-1 pure-hidden-xs pure-hidden-sm" id="desktop-collapse-menu">
+    <div class="site-menu-newsweekly pure-menu-horizontal pure-menu-heading pure-u-sm-1 pure-u-1 pure-u-md-1 pure-hidden-xs pure-hidden-sm">
       <div class="pure-hidden-xs pure-hidden-sm">
       <ul class="pure-menu-list">
           <?php do_action('nateserk_techy_news_action_setup_menu', 'menu-header', 'newsweekly'); ?>
