@@ -4,6 +4,7 @@ Nateserk Techy News Wordpress Theme
 ===
 * License GNU GPLv3 (http://choosealicense.com/licenses/gpl-3.0/)
 * Based on Underscores http://underscores.me/.
+* Integrated with PureCSS https://purecss.io/.
 
 Requirements
 ===
